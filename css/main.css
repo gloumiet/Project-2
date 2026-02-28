@@ -1,0 +1,305 @@
+/* Place CSS styles here */
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+  font-family: Bidena trial;
+  font-size: 20px;
+  text-align: center;
+  color: #e7eaff;
+}
+
+p{
+  font-family: Helvetica, sans-serif;
+  font-size: 30;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  color: #e7eaff;
+}
+
+.logo{
+  font-family: Bidena trial;
+}
+
+header{
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #111;
+  color: #e7eaff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  color: #e7eaff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d7295d;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #e7eaff;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #111;
+    width: 200px;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+.button {
+  align-self: center;
+}
+
+
+
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: #e7eaff;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: #e7eaff;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+
+
+
+.hero {
+width: 100%;
+max-width: 1200px;
+margin: auto;
+padding: 200px;
+}
+
+.hero h1 {
+font-size: 70px;
+line-height: 1.2;
+}
+
+.hero-content {
+width: 100%;
+margin: 0 auto;
+text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+width: 100%;
+}
+}
+
+@media (max-width: 768px) {
+.hero h1 {
+font-size: 2rem;
+}
+}
+
+
+
+
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 200px;
+  display: flex;
+}
+
+.about-content h2 {
+  font-family: Bidena Trial;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #e7eaff;
+  text-align: center;
+}
+
+.about-content p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #e7eaff;
+}
+
+
+
+
+
+
+.featured-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px;
+}
+
+.feature-box {
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  background: #e7eaff;
+  box-shadow: 0 10px 30px #0000000d;
+}
+
+.feature-box img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+.feature-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2a0f97;
+}
+
+.feature-box p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #2a0f97;
+}
+
+
+
+
+
+body {
+  font-family: Helvetica, sans-serif;
+  background: #2a0f97;
+  margin: 0;
+}
+
+.order-section {
+  width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  background: #e7eaff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px #ca19190d;
+}
+
+.order-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2a0f97;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e7eaff;
+}
+
+button,
+.back-button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: #CFC3FF;
+  color: #2a0f97;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:hover,
+.back-button:hover {
+  background: #d7295d;
+}
+
+
+.site-footer {
+  background-color: black;
+  color: #e7eaff;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 80px;
+}
